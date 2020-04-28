@@ -7,10 +7,6 @@ html, body {
     border: 0;
 }
 
-* {
-	margin: 0
-}
-
 body {
   background-image: url('media/background_white.png');
   background-size: cover;
@@ -31,7 +27,6 @@ body {
 }
 
 .navbar {
-	overflow: hidden; 
 	position: fixed;
 	background-color: #000;
 	top: 0;
@@ -55,62 +50,64 @@ body {
 }
 
 .dropbtn {
-	background-color: #4caf50;
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	min-width: 160px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  min-width: 120px;
 }
 
 .dropdown {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
+  float: right;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	right: 100%;
+  display: none;
+  position: absolute;
+  float: left;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-	color: black;
-	padding: 12px 16px; 
-	text-decoration: none;
-	display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  alight: right;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-	display: block;
+.dropdown-content a:hover {
+  background-color: #ddd;
+  width: 100%;
 }
 
-.dropdown:hover .dropbtn {
-	background-color: #3e8e41;
-}
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 </style>
-
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body>
+
 <div class="navbar">
-  <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
-	  <a href="#">Home</a>
-	  <a href="#">Tutorials</a> 
-	  <a href="#">Projects</a>
-    </div>
+<div>
+  <a href="#" class="fab fa-github-square"></a>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+	<a href="#"></a>
   </div>
 </div>
-<p class="centered">
-Lorem ipsum 
-</p>
+</div>
+
 </body>
 </html>
