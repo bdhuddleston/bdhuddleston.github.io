@@ -15,17 +15,6 @@ body {
   height: 100%
 }
 
-.centered {
-	text-align: center; 
-	font-family: "Times New Roman", Times, serif;
-	font-size: 44px;
-	min-height: 100%;
-	height: auto; 
-	height: 100%;
-	margin: 0 auto -20px;
-	margin-top: 30px;
-}
-
 .navbar {
 	position: fixed;
 	background-color: #000;
@@ -35,7 +24,6 @@ body {
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -62,6 +50,7 @@ body {
   position: relative;
   display: inline-block;
   float: right;
+  height: 100%;
 }
 
 .dropdown-content {
@@ -79,7 +68,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  alight: right;
+  align: right;
 }
 
 .dropdown-content a:hover {
@@ -87,9 +76,33 @@ body {
   width: 100%;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;align:left;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.icon-holder {
+  overflow: hidden;
+  float: left;
+  height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.icon-holder a {
+  float: left;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white; 
+  font-size: 28px;
+  width: 50px;
+  text-align: center; 
+  text-decoration: none;
+}
+
+.fa {
+  text-align: center;
+  text-decoration: none;
+}
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -98,15 +111,23 @@ body {
 <body>
 
 <div class="navbar">
-<div>
-  <a href="#" class="fa fa-github-square"></a>
+<div class="icon-holder">
+  <a href="https://www.youtube.com/user/Jere5120"><i class="fa fa-fw fa-youtube-play"></i></a>
+  <a href="https://github.com/bdhuddleston/encodeventor"><i class="fa fa-fw fa-github-square"></i></a>
+  <a href="https://www.linkedin.com/in/bradley-huddleston-a359a467"><i class="fa fa-fw fa-linkedin"></i></a>
 </div>
 <div class="dropdown">
   <button class="dropbtn">Menu</button>
   <div class="dropdown-content">
-	<a href="#"></a>
+	<a href="https://www.youtube.com/user/Jere5120">YouTube</a>
+	<a href="https://github.com/bdhuddleston/encodeventor">GitHub</a>
+	<a href="https://www.linkedin.com/in/bradley-huddleston-a359a467">LinkedIn</a>
   </div>
 </div>
+</div>
+
+<div style="text-align:center; vertical-align: middle; margin: auto; width:50%;">
+  <p style="height:100%;padding:70% 0;font-size:72px;">Coming soon!</p>
 </div>
 
 </body>
